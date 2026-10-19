@@ -1,0 +1,9 @@
+{
+  "note": "Applied by timemap.py --corrections to out_transcript.txt. pattern = case-insensitive regex. With start/end a rule only applies inside that webcam-second range.",
+  "rules": [
+    {"pattern": "\\bCloud\\b(?!\\s+City\\b)", "replacement": "Claude"},
+    {"pattern": "\\b(?:Chat GPT|ChatGP)\\b", "replacement": "ChatGPT"},
+    {"pattern": "\\bget hub\\b", "replacement": "GitHub"},
+    {"pattern": "\\bpie torch\\b", "replacement": "PyTorch", "start": 120, "end": 180}
+  ]
+}

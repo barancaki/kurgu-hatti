@@ -1,0 +1,19 @@
+{
+  "language": "en",
+  "transcribe": {"model": "large-v3"},
+  "cuts": {
+    "silence_gap_s": 0.45,
+    "breath_s": 0.2,
+    "filler_min_s": 0.4,
+    "filler_padding_s": [0.1, 0.14]
+  },
+  "audio": {
+    "target_lufs": -14,
+    "true_peak_dbtp": -1
+  },
+  "music": {"speech_lufs": -33, "title_lufs": -20},
+  "colors": {"accent": "0xFFC400"},
+  "lexicon": {
+    "retake_phrases": ["cut that", "cut this", "let me start over", "start again", "take two"]
+  }
+}

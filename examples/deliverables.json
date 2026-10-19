@@ -1,0 +1,7 @@
+{
+  "keep": [
+    "renders/final.mp4",
+    "renders/shorts/*.mp4",
+    "renders/shorts/*.srt"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "overlays": [
+    {"id": "questions", "file": "overlays/questions.mov", "start": 6.4, "mode": "alpha"},
+    {"id": "ch1", "file": "overlays/ch1.mov", "start": 95.0, "mode": "alpha"},
+    {"id": "counter", "file": "overlays/counter.mov", "start": 104.2, "mode": "alpha"}
+  ],
+  "sfx": [
+    {"id": "questions", "file": "sfx/library/pop.mp3", "start": 6.6, "gain_db": -20},
+    {"id": "ch1", "file": "sfx/library/whoosh.mp3", "start": 95.1, "gain_db": -18},
+    {"id": "counter", "file": "sfx/library/tick.mp3", "start": 104.5, "gain_db": -22}
+  ],
+  "prepend": [{"file": "overlays/intro.mp4"}],
+  "append": [{"file": "overlays/outro.mp4"}],
+  "music": {"file": null, "gain_db": -26, "duck": true}
+}

@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "timeline": "webcam seconds; mode starts snap to nearest transcript word start; paths relative to project working directory",
+  "sources": {
+    "webcam": "raw/webcam.mp4",
+    "screen": "raw/screen.mp4"
+  },
+  "transcript": "work/transcript.json",
+  "sync": "work/sync.json",
+  "cut_points": "edit/cut_points.json",
+  "fps": 30,
+  "transition_s": 0.45,
+  "zoom_ease_s": 0.5,
+  "modes": [
+    {"start": 0, "mode": "TALK"},
+    {"start": 120.0, "mode": "SCREEN"},
+    {"start": 300.0, "mode": "TALK"}
+  ],
+  "screen_crop": [0, 0, 1920, 1080],
+  "face": {
+    "center": [960, 540],
+    "pip_source_size": 900,
+    "talk_anchor": [0.42, 0.5]
+  },
+  "talk": {"zoom_levels": [1, 1.12], "push": 0.02},
+  "pip": {"diameter": 300, "margin": 40, "border": 4, "shadow": true},
+  "audio": {"crossfade_s": 0.012, "only_webcam": true},
+  "zooms": [
+    {
+      "id": "ornek-zoom",
+      "start": 130.0,
+      "end": 136.0,
+      "scale": 1.6,
+      "center": [960, 400],
+      "target": "Ekranda vurgulanacak bölge"
+    },
+    {
+      "id": "istem-kutusu",
+      "start": 200.0,
+      "end": 208.0,
+      "scale": 2.2,
+      "center": [1090, 930],
+      "target": "Alt kenara yakın küçük UI yazısı",
+      "output_anchor": [0.5, 0.55],
+      "mask_below": 990,
+      "background": "0x111410"
+    }
+  ]
+}

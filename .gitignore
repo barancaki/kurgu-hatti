@@ -1,0 +1,32 @@
+# Recordings, intermediates and outputs never go into the repo
+raw/
+work/
+renders/
+overlays/
+qa/
+music/
+sfx/
+models/
+fonts/
+edit/
+hf/
+
+# Python / Node
+.venv/
+venv/
+__pycache__/
+*.pyc
+node_modules/
+
+# Local settings and secrets
+kurgu.config.json
+.env
+.env.*
+*.key
+*.pem
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

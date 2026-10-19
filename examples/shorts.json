@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "project_root": "..",
+  "name_prefix": "short",
+  "sources": {
+    "webcam": "raw/webcam.mp4",
+    "screen": "raw/screen.mp4",
+    "edl": "edit/final_edl.json",
+    "words": "edit/out_words.json",
+    "transcript": "work/transcript.json",
+    "sync": "work/sync.json"
+  },
+  "output_dir": "renders/shorts",
+  "work_dir": "work/shorts",
+  "qa_dir": "qa/shorts",
+  "fps": 30,
+  "font": {
+    "file": "fonts/YourFont-SemiBold.ttf",
+    "family": "YourFont SemiBold",
+    "requested_weight": 700,
+    "available_weight": 600,
+    "size": 76,
+    "outline": 6,
+    "shadow": 2,
+    "max_width": 850
+  },
+  "music": {
+    "file": "music/bed.mp3",
+    "body_start": 20.0,
+    "lufs": -33,
+    "fade_out": 1.2,
+    "duck_max_db": 5
+  },
+  "sfx": {
+    "hook": {"file": "sfx/library/pop.mp3", "gain_db": -20},
+    "cta": {"file": "sfx/library/chime.mp3", "gain_db": -22}
+  },
+  "overlays": {
+    "hook": "overlays/shorts/hook-{n}.mov",
+    "cta": "overlays/shorts/cta.mov",
+    "hook_duration": 2.8,
+    "cta_duration": 2.2
+  },
+  "split_face": [208, 100, 1184, 900],
+  "colors": {"accent": "0xFFC400"},
+  "asr_rules": [
+    {"pattern": "\\bCloud\\b", "replacement": "Claude"}
+  ],
+  "protect_phrases": ["Cloud City"],
+  "corrections": {
+    "Javascript": "JavaScript"
+  },
+  "phrase_corrections": [
+    ["pie torch", "PyTorch"]
+  ],
+  "shorts": [
+    {
+      "n": 1,
+      "id": "demo-screen",
+      "hook": "Hook line / second line",
+      "ranges": [
+        {"start": 120.0, "end": 170.0, "mode": "SPLIT", "region": [450, 48, 980, 980]}
+      ],
+      "talk_crop": [460, 230, 600, 1066]
+    },
+    {
+      "n": 2,
+      "id": "demo-talk",
+      "hook": "Big question / here",
+      "ranges": [
+        {"start": 300.0, "end": 352.0, "mode": "TALK-V"}
+      ],
+      "exclude": [{"start": 330.0, "end": 334.5}],
+      "talk_crop": [460, 230, 600, 1066]
+    }
+  ]
+}

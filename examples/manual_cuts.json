@@ -1,0 +1,24 @@
+{
+  "timeline": "webcam seconds, half-open intervals; boundaries refined by finalize_edl.py",
+  "protect": [
+    {"start": 598.4, "end": 599.0, "reason": "Required 0.60 s closing handle after the sign-off"}
+  ],
+  "cuts": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 8.2,
+      "reason": "Recording setup and a false start",
+      "text": "Okay, it's recording. Hi everyone, today... wait.",
+      "expected_removed_word_indices": [0, 1, 2, 3, 4, 5, 6]
+    },
+    {
+      "id": 2,
+      "start": 64.1,
+      "end": 70.9,
+      "reason": "Abandoned sentence and a 'we'll cut this' note",
+      "text": "Right now this is... We'll cut this.",
+      "expected_removed_word_indices": [120, 121, 122, 123, 124, 125]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# Test edilen sürümler (Python 3.11). Daha yeni sürümler büyük olasılıkla çalışır.
+numpy>=2.0
+scipy>=1.13
+soundfile>=0.12
+av>=12            # PyAV: TALK<->SCREEN geçiş kareleri
+faster-whisper>=1.1
+
+# Opsiyonel, NVIDIA GPU ile Whisper için (Windows/Linux):
+# nvidia-cublas-cu12
+# nvidia-cudnn-cu12
